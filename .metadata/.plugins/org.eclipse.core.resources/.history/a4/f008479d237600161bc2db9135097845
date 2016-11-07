@@ -1,0 +1,19 @@
+package javaAPI;
+
+public class ApiJava {
+
+	public static void main(String[] args) {
+		Vector<Integer> v = new Vector<Integer>();
+		v.add(5);
+		v.add(-1);
+		v.add(15);
+		v.add(2,100);
+		Syetem.out.println("Vector Size" + v.size());
+		Syetem.out.println("Vector capacity" + v.capacity());
+		
+		for
+		
+
+	}
+
+}

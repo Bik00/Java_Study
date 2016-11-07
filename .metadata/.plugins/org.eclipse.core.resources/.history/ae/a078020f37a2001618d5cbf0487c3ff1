@@ -1,0 +1,28 @@
+package project1104;
+
+class Counter {
+	int value=0;
+	public void increment() {
+		value = value+1;
+	}
+	public void print() {
+		System.out.println(value);
+	}
+}
+class MyThread extends Thread {
+	Counter sharedCounter;
+	//»ý¼ºÀÚ
+	public MyThread(Counter input) {
+		sharedCounter = input;
+	}
+}
+
+
+public class WDB {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

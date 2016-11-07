@@ -1,0 +1,18 @@
+package test;
+
+import javax.swing.*;
+
+public class test extends JFrame{
+	public test() {
+		getContentPane().setLayout(null);
+		
+		JButton btnNewButton = new JButton("New button");
+		btnNewButton.setBounds(171, 158, 97, 23);
+		getContentPane().add(btnNewButton);
+		
+		setVisible(true);
+	}
+	public static void main(String[] args){
+		new test();
+	}
+}

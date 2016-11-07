@@ -1,0 +1,38 @@
+package project1107;
+//판매대 역할을 하는 buffer 클래스 작성
+//동기화 제어를 위해 get, put은 sync	
+class Buffer {
+	//피자 순서를 저장하기 위한 맴버 변수
+	int data;
+	//비어있는지 채크하기 위한 변수
+	boolean empty;
+	
+	//생성자
+	public Buffer() {
+		empty = true;
+	}
+	//판매대 역할을 하는 buffer 클래스 작성
+	//동기화 제어를 위해 get, put은 sync	
+	public synchronized int get() {
+		//버퍼에 데이터가 없으면 wait 해야 한다.
+		while(empty) { //버퍼에 데이터가 없으면
+			wait();
+		}
+		//여기에 도달하면 empty가 false라는 이야기 : 즉 물건이 있다.
+		empty=true;
+		notifyAll(); //생산자를 깨워라
+		return data;
+	}
+	
+	public synchronized void put(int inputData) {
+		
+	}
+}
+
+public class WDB {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package test;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import javax.swing.JButton;
+import java.awt.CardLayout;
+import javax.swing.BoxLayout;
+import javax.swing.JComboBox;
+import java.awt.Panel;
+import javax.swing.JTextPane;
+import java.awt.FlowLayout;
+import javax.swing.JTextArea;
+import javax.swing.JLabel;
+import javax.swing.JRadioButton;
+import javax.swing.JTable;
+import javax.swing.JInternalFrame;
+
+public class test extends JFrame{
+	public test() {
+		getContentPane().setLayout(null);
+		
+		JButton btnNewButton = new JButton("New button");
+		btnNewButton.setBounds(171, 158, 97, 23);
+		getContentPane().add(btnNewButton);
+	}
+	public static void main(String[] args){
+		new test();
+	}
+}

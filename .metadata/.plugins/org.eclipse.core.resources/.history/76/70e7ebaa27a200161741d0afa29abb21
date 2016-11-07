@@ -1,0 +1,15 @@
+package test;
+
+import java.awt.Container;
+
+import javax.swing.JFrame;
+
+public class Action_Test extends JFrame{
+	Action_test(){
+		setTitle("ActionListener");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Container cP = getContentPane();
+		cP.setLayout(new FlowLayout());
+	}
+}

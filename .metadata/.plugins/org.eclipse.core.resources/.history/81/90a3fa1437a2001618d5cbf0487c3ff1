@@ -1,0 +1,35 @@
+package project1104;
+
+class Counter {
+	int value=0;
+	public void increment() {
+		value = value+1;
+	}
+	public void print() {
+		System.out.println(value);
+	}
+}
+class MyThread extends Thread {
+	Counter sharedCounter;
+	//생성자
+	public MyThread(Counter input) {
+		sharedCounter = input;
+	}
+	@Override
+	public void run() {
+		// 10000번 증가시킨다.
+		for(int i=0;i<10000;i++) {
+			
+		}
+	}
+}
+
+
+public class WDB {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

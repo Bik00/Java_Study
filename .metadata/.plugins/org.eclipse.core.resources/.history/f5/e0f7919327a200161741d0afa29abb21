@@ -1,0 +1,10 @@
+package test;
+
+import javax.swing.JFrame;
+
+public class Action_Test extends JFrame{
+	Action_test(){
+		setTitle("ActionListener");
+		setdefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}
